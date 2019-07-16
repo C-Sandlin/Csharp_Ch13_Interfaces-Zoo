@@ -1,6 +1,6 @@
 namespace Zoo
 {
-    public interface ISwimming
+    public interface IWaterDwelling
     {
         int MaximumDepth { get; }
         void Swim();

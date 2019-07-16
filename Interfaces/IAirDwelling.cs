@@ -1,6 +1,6 @@
 namespace Zoo
 {
-    public interface IFlying
+    public interface IAirDwelling
     {
         void Fly();
         int MaximumCeiling { get; }

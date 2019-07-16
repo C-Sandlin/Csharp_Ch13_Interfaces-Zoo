@@ -2,16 +2,14 @@ using System;
 
 namespace Zoo
 {
-    public class PaintedDog : IWalking
+    public class PaintedDog : IGroundDwelling
     {
-        public int MaximumSpeed { get; } = 20;
-        public void Run()
+
+        public int MaximumSpeed { get; } = 47;
+        public string TypeEnvironment { get; set; } = "Savannah";
+        public void Move()
         {
-            Console.WriteLine("Animal is now running");
-        }
-        public void Walk()
-        {
-            Console.WriteLine("Animal is now walking");
+            Console.WriteLine("Animal is now moving across the ground");
         }
 
     }

@@ -2,21 +2,20 @@ using System;
 
 namespace Zoo
 {
-    public class SeaTurtle : IWalking, ISwimming
+    public class SeaTurtle : IWaterDwelling, IGroundDwelling
     {
-        public int MaximumDepth { get; } = 100;
-        public int MaximumSpeed { get; } = 5;
-        public void Run()
-        {
-            Console.WriteLine("Animal is now running");
-        }
-        public void Walk()
-        {
-            Console.WriteLine("Animal is now walking");
-        }
+
+        public int MaximumDepth { get; } = 14;
         public void Swim()
         {
             Console.WriteLine("Animal is now swimming");
+        }
+
+        public int MaximumSpeed { get; } = 20;
+        public string TypeEnvironment { get; set; } = "Tropical";
+        public void Move()
+        {
+            Console.WriteLine($"The animal is moving across the ground at {MaximumSpeed} miles per hour");
         }
     }
 }
